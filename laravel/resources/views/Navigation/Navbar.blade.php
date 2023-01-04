@@ -3,8 +3,7 @@
         {{--             ^-fluid  --}}
 
         <a class="navbar-brand" href="/">
-        <img src="img/pngwing.png" alt="logo" width="30"class="d-inline-block align-text">
-        Barbatos Shop
+        <img src="img/pngwing.png" alt="logo" width="35"class="d-inline-block align-text">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

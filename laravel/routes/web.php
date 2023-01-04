@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthenController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/dull', function () {
     return view('welcome');
 });
 //main route
@@ -22,6 +24,7 @@ Route::get('/', function () {
         'title' => 'Home',
     ]);
 });
+
 Route::get('/register', function () {
     return view('Register',[
         'title' => 'Register',
@@ -33,12 +36,7 @@ Route::get('/login', function () {
     ]);
 });
 
-//rumit
-Route::get('/category', function () {
-    return view('Category',[
-        'title' => 'Category',
-    ]);
-});
-
-Route::get('/Home', [HomeController::class, 'home']);
+Route::get('/', [HomeController::class, 'home']);
 Route::post('/register', [AuthenController::class, 'register']);
+Route::post('/loginpage', [AuthenController::class, 'login']);
+Route::get('/loginpage', [AuthenController::class, 'login']);

@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
+            $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('ConfirmPassword');
@@ -23,12 +23,10 @@ class CreateUsersTable extends Migration
             $table->date('DOB');
             $table->string('Country');
             $table->rememberToken();
-            $table->string('alamat')->nullable();
-            $table->string('NoHP')->nullable();
-            $table->timestamp('verified_at')->nullable();
             $table->timestamps();
         });
     }
+
     /**
      * Reverse the migrations.
      *

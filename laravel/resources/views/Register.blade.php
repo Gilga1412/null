@@ -46,9 +46,9 @@
             <br>
             <select name="Country">
                 <option value="option0" selected> Choose a country </option>
-                <option value="option1"> Indonesia </option>
-                <option value="option2"> Argentina </option>
-                <option value="option3"> Portugal </option>
+                <option value="Indonesia"> Indonesia </option>
+                <option value="Argentina"> Argentina </option>
+                <option value="Portugal"> Portugal </option>
               </select>
             <br>
             <br>
